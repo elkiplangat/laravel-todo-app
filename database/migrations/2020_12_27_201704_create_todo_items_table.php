@@ -16,6 +16,8 @@ class CreateTodoItemsTable extends Migration
         Schema::create('todo_items', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('title');
+            $table->text('description');
         });
     }
 
