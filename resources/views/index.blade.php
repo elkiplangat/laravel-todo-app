@@ -3,5 +3,9 @@
     Home
 @endsection
 @section('content')
-    <h2>It works</h2>
+    @if(count($todo_items)>0)
+
+    @else
+    <h2>Looks like you dont have shit</h2>
+    @endif
 @endsection
